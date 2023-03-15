@@ -1,0 +1,38 @@
+.loginBtn{
+    border: 0px ;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 300px;
+    height:35px;
+    margin-bottom: 20px;    
+}
+.gBtn{
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    height: 30px;
+    color: gray;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.regBtn{
+    border: 0px ;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 300px;
+    height:35px;
+    margin-bottom: 20px; 
+    margin-top: 20px;   
+}
+button{
+    cursor: pointer;
+}
+.imgBtn{
+    font-weight: bold;
+
+}

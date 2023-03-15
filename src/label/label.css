@@ -1,0 +1,12 @@
+label{
+    font-size: small;
+    color: gray;
+    font-weight: bold;  
+}
+.signUp{
+    color: blue;
+    cursor: pointer;
+}
+.fpLabel{
+    cursor: pointer;
+}

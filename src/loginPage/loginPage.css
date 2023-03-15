@@ -1,0 +1,47 @@
+.containerLogin {
+  border: 1px solid white;
+  width: 500px;
+  text-align: left;
+  margin-left: 450px;
+  margin-top: 100px;
+  height: 500px;
+}
+.innerDiv {
+  display: flex;
+  align-items: center;
+}
+.outerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.Btns {
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+  font-size: small;
+  color: darkgrey;
+}
+
+.containerSignUp {
+  border: 1px solid white;
+  width: 300px;
+  text-align: left;
+  margin-left: 450px;
+  margin-top: 100px;
+  height: 700px;
+}
+.lbl{
+    text-align: center;
+}
+.container{
+  border: none;
+  text-align: left;
+  height: 700px;
+}
