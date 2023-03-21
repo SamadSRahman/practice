@@ -1,0 +1,54 @@
+.bodyContainer {
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+  display: block;
+}
+@media screen and (min-width: 750px) {
+  .bodyContainer {
+    display: flex;
+  }
+}
+
+.textContainer {
+  width: 600px;
+  position: relative;
+}
+.bodyTxt {
+  font-size: 80px;
+}
+.txt {
+  padding: 10px;
+  color: gray;
+  font-weight: bold;
+}
+
+.gsBtn {
+  background-color: orange;
+  border: 2px solid orange;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-weight: bold;
+}
+.useBtn {
+  background-color: white;
+  border: 2px solid orange;
+  color: orange;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-weight: bold;
+}
+.imgContainer {
+  width: 700px;
+}

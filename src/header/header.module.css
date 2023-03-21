@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    padding-top: 10px;
+    width: 700px;
+    height: 50px;
+}
+.labelContainer{
+    text-align: left;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 600px;
+    justify-content:space-between ;
+}
+.wrapper{
+    display: none;
+    width: max-content;
+
+}
+.label{
+    padding: 10px;
+    color : gray;
+    font-weight: bold;
+    width: fit-content;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.btnContainer{
+    text-align: right;
+    justify-content: flex-end;
+    width: 800px;
+    display: flex;
+    
+}
+.signupBtn {
+    background-color: white;
+    border: 2px solid orange;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: bold;
+    
+  }
+.onClickLabel{
+    font-weight: bolder;
+    font-size: large;
+    color :black;
+        padding: 10px;
+
+}
+
+@media screen and (min-width:750px) {
+    .wrapper{
+        display: flex;
+    }
+   .menuBtn{
+    display: none;
+   }
+   .menu{
+    display: none;
+   }
+    
+}
+.menuBtn{
+    border: none;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin-top: 10px;
+    margin-left: 500px;
+}
+.menu{
+    width: 500px;
+    display: block;
+    margin-top: 40px;
+    margin-right: 5px;
+    
+}
+.mBtn{
+    width: 120px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
