@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    margin: 50px;
+    overflow: scroll;
+    height: 250px;
+    width: 500px;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card{
+    color: black;   
+    background-color: rgb(155, 214, 242);
+    min-width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 0px 5px 10px  black;
+    
+}
+.image{
+    display: inline;
+    margin: 0 auto;
+    margin-left: -2%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+}
+.name{
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+}
+.designation{
+    display: inline-block;
+    padding: 5px;
+}
+.exp{
+    display: inline-block ;
+    color:blue;
+    padding: 5px;
+    font-weight: bold;
+    
+}
