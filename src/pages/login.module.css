@@ -1,0 +1,93 @@
+.navBar {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-left: 7rem;
+}
+h5 {
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 10px;
+}
+.btnWrapper {
+  margin: 5px;
+  height: fit-content;
+
+  padding-top: 10px;
+  align-items: center;
+}
+.CgProfileIcon {
+  margin: 50px;
+}
+.body {
+  background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  border: 1px solid;
+  min-height: 50rem;
+}
+.loginDiv {
+  position: fixed;
+  left: 30rem;
+  background-color: white;
+  width: 30rem;
+  top: 10rem;
+  height: 22rem;
+}
+.usernameDiv {
+  display: flex;
+  width: 20rem;
+  border: 1px solid;
+  position: relative;
+  top: -1rem;
+  left: 5rem;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.passDiv {
+  display: flex;
+  width: 20rem;
+  border: 1px solid;
+  position: relative;
+  left: 5rem;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.profilePic {
+  position: relative;
+  top: -3.5rem;
+  width: 25%;
+  border-radius: 50%;
+  left: 11rem;
+}
+.extContainer {
+  display: flex;
+  height: 4rem;
+  width: 21.3rem;
+  position: relative;
+  top: 2rem;
+  left: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.txtDiv {
+  width: 10rem;
+  font-size: small;
+  font-weight: bold;
+}
+.emailDiv {
+  display: flex;
+  top: -2rem;
+  width: 20rem;
+  border: 1px solid;
+  position: relative;
+  left: 5rem;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.regLabel {
+  text-decoration: underline;
+  cursor: pointer;
+}

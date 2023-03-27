@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.navBar{
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-left: 7rem;
+
+}
+h5{
+  font-weight: bolder;
+  font-size: large;
+ margin-top: 10px;
+}
+.btnWrapper{
+margin: 5px;
+height: fit-content;
+
+padding-top: 10px;
+align-items: center;
+}
+.CgProfileIcon{
+  margin: 50px;
+}

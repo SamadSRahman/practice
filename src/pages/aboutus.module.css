@@ -1,0 +1,59 @@
+.navBar {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-left: 7rem;
+}
+h5 {
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 10px;
+}
+.btnWrapper {
+  margin: 5px;
+  height: fit-content;
+
+  padding-top: 10px;
+  align-items: center;
+}
+.CgProfileIcon {
+  margin: 50px;
+}
+.imgSelf {
+  width: 15%;
+  border-radius: 10%;
+  padding: 10px;
+}
+.body {
+  text-align: left;
+  padding: 5rem;
+}
+.imgWrapper {
+  display: flex;
+
+  font-weight: bold;
+  font-size: larger;
+}
+.skillsDiv {
+  display: inline-block;
+  background-color: rgb(0, 213, 255);
+  width: 15rem;
+  height: 8rem;
+  position: relative;
+  left: 10rem;
+  margin: 5px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.blocks {
+  display: flex;
+}
+h1 {
+  font-size: 50px;
+  margin-left: 15px;
+}
+.specialTxt {
+  color: blue;
+  font-weight: bold;
+}
