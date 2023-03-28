@@ -11,7 +11,7 @@ h5 {
   margin-top: 10px;
 }
 .btnWrapper {
-  display: none;
+  display: block;
   margin: 5px;
   height: fit-content;
   position: relative;
@@ -30,8 +30,4 @@ h5 {
   right: 4.5em;
   top: 3rem;
 }
-@media (min-width: 700px) {
-  .btnWrapper {
-    display: block;
-  }
-}
+
