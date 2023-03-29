@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Route, Router, Routes} from 'react-router-dom';
+import { AboutUs } from './pages/About US/aboutUs';
+import { Login } from './pages/Login/login';
+import { Register } from './pages/Register/register';
+import { Home } from './pages/Home/home';
+import { LuckyNum } from './components/luckynum/luckyNum';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <App/>
+    <Routes>
+    <Route path='/' element={<LuckyNum/>}/>
+    <Route path='/home' element={<Home/>}/>
+    <Route path='/aboutus' element={<AboutUs/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/register' element={<Register/>}/>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

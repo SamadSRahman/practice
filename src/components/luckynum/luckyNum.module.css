@@ -1,0 +1,20 @@
+.container{
+     margin-top: 10rem;
+     width: 30rem;
+     margin-left: 30rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.matchBtn{
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px;
+}
+.userInp{
+    width: 10rem;
+    padding: 5px;
+}
+.resDiv{
+    text-align: center;
+}

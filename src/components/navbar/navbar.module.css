@@ -1,0 +1,35 @@
+.container {
+  border-bottom: 2px solid;
+}
+.navBar {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-left: 7rem;
+}
+h5 {
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.btnWrapper {
+  display: block;
+  margin: 5px;
+  height: fit-content;
+  position: relative;
+  padding-top: 10px;
+  align-items: center;
+}
+.CgProfileIcon {
+  margin: 50px;
+}
+.menuDiv {
+  display: block;
+  width: 8rem;
+  text-align: center;
+  position: fixed;
+  right: 4.5em;
+  top: 3rem;
+}
