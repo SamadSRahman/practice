@@ -1,19 +1,56 @@
 .App {
   text-align: center;
+  display: flex;
+  background-color: darkgrey;
+  height: 100vh;
+}
+.inputContainer{
+  border: 1px solid;
+  width: 50%;
+  height: 40vh;
+  display: block;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 4%;
+  background-color: cornflowerblue;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+input{
+  text-align: center;
+  display: block;
+  margin: auto;
+  height: 20px;
+  min-width: 15rem;
+  font-size: large;
+}
+.displayDiv{
+  border: 1px solid;
+  width: 92%;
+  height: 40vh;
+  display: block;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 4%;
+  position: absolute;
+  top: 22rem;
+  background-color: lightgreen;
 }
 table{
-  border: 1px solid ;
+  border: 1px solid;
   border-collapse: collapse;
 }
 th, td{
-  border: 1px solid ;
- 
-  
+  border: 1px solid;
 }
-button{
-  background-color: white;
-}
-.actions{
-  display: flex;
-  justify-content: center;
+.addBtn{
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+
 }
