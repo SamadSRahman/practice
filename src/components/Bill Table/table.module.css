@@ -1,0 +1,19 @@
+th{
+    border:1px solid;
+    width: 15rem;
+}
+table{
+    border: 1px, solid;
+    border-collapse: collapse;
+}
+tr{
+    border: 1px, solid;
+
+}
+.container{
+    border: 1px solid;
+    margin: 10px;
+    max-width: fit-content;
+    padding: 20px;
+    
+}
