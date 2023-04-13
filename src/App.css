@@ -1,19 +1,60 @@
 .App {
   text-align: center;
-}
-table{
-  border: 1px solid ;
-  border-collapse: collapse;
-}
-th, td{
-  border: 1px solid ;
- 
-  
-}
-button{
-  background-color: white;
-}
-.actions{
   display: flex;
-  justify-content: center;
+}
+.titleWrapper{
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.titleWrapper:hover{
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+.titleWrapper:active{
+  background-color: antiquewhite;
+  transition: 0.5s;
+}
+.listWrapper{
+  max-width: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid;
+  
+  padding: 5px;
+  padding-top: 0px;
+  max-height: 95vmin;
+  overflow: scroll;
+  background-color: cornflowerblue;
+  box-shadow: 5px 5px 10px royalblue;
+}
+.detailsWrapper{
+  width: 50%;
+  border: 1px solid;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: cadetblue;
+  padding-top: 200px;
+  color: white;
+  box-shadow: 5px 5px 10px cadetblue;
+}
+.heading{
+  color: white;
+ margin-top: 0;
+}
+
+.headingWrapper{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: cornflowerblue;
+  height: 50px;
+  padding: 25px;
+}
+.headDetails{
+  position: absolute;
+  top: 2rem;
+  right: 21rem;
 }
