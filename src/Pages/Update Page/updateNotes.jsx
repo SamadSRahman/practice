@@ -14,18 +14,18 @@ export function UpdateNotes() {
     setIsVisible(true);
   }
 
-    function handleDone(note, index) {
-        const update = [...notes]
-        
-        for (let i = 0; i < update.length; i++){
-            if (i === index){
-                update[i] = input
-                break;
-            }
-        }
-       
-        setNotes(update)
-        setIsVisible(false);
+  function handleDone(note, index) {
+    const update = [...notes];
+
+    for (let i = 0; i < update.length; i++) {
+      if (i === index) {
+        update[i] = input;
+        break;
+      }
+    }
+
+    setNotes(update);
+    setIsVisible(false);
   }
   return (
     <div>
@@ -43,15 +43,17 @@ export function UpdateNotes() {
                 >
                   {x}
                 </textarea>
-                        <button style={ isVisible? { display: 'none' } : {}}
+                <button
+                  style={isVisible ? { display: "none" } : {}}
                   onClick={() => {
                     handleUpdate(i);
                   }}
-                            className={styles.updBtn}
+                  className={styles.updBtn}
                 >
                   Update
                 </button>
-                <button style={ isVisible? { } : {display: 'none' }}
+                <button
+                  style={isVisible ? {} : { display: "none" }}
                   onClick={() => {
                     handleDone(x, i);
                   }}

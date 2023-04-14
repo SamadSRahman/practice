@@ -4,7 +4,7 @@ import { notesList } from "../../components/atom";
 import { useRecoilState } from "recoil";
 
 export function Home() {
-    const [notes, setNotes] = useRecoilState(notesList)
+    const [notes, setNotes] = useRecoilState(notesList)//[]
 
     return (
         <div>
