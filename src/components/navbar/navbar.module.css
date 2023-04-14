@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    gap:10px;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+
+}
+.linkWrapper{
+    border: 1px solid gray;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
