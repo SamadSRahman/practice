@@ -1,10 +1,16 @@
 import "./App.css";
-import ListComponent from './ListComponent/listComponent'
-import { Provider } from "react";
+import React from "react";
+import Counter from "./ReduxCounterApp/Counter";
+import { Provider } from "react-redux";
+import store from "./ReduxCounterApp/store";
+
 function App() {
   return <div className="App">
-    <Provider>
-      <ListComponent />
+    <Provider store={store}>
+      <div>
+        <Counter />
+      
+      </div>
     </Provider>
     
   </div>;
