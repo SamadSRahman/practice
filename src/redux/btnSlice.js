@@ -122,6 +122,7 @@ export const counterSlice = createSlice({
         increaseCounter: (state, actions) => {
             const index = actions.payload
             state.arr[index].count += 1;
+            
         }
     }
 }) 
