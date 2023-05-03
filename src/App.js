@@ -1,52 +1,111 @@
 
-import './App.css';
+import styles from './App.module.css'
 import { useState } from 'react';
-import {BsSearch} from 'react-icons/bs'
+
 
 function App() {
-  const [input, setInput] = useState("")
-  const [list, setList] = useState([])
-  const [selected, setSelected] = useState("")
-  const [isVisible, setIsVisible] = useState(false)
-  let search =[]
-  const fruits = ["banana", "orange", "apple", "mango", "grapes", "pineapple", "jackfruit", "dragonfruit", "lichi", "dates", "papaya", "watermelon", "melon", "green apple", "guava"];
-  function handleChange(e) {
-    setInput(e.target.value)
+  const [value, setValue] = useState("")
+  const [first, setFirst] = useState("")
+  const [sec, setSec] = useState("")
   
-    search = fruits.filter((ele) => {
-      const temp = ele;
-      if (temp.includes(input)) {
-        return temp;
-      }
-    });
-
-    setList(search);
-    setIsVisible(true)
+  const buttons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "00", "0", "."]
+  const [isFirst, setIsFirst]= useState(true)
+  function handleAdd() {
+    setIsFirst(false)
+    // if(!value.includes("+"))
+      setValue(value + "+")
+     if (value.includes("-") || value.includes("/") || value.includes("*"))
+      setValue(first+"+")
   }
-  function handleClick(fruit) {
-    const temp = fruits.find((ele) => ele === fruit)
-    setSelected(temp)
-    setIsVisible(!isVisible)
-}
-  return (
-    <div className='wrapper'>
-    <div className='container'>
-      <div className='searchBar'>
+  function handleSub() {
+    setIsFirst(false)
+    // if(!value.includes("-"))
+      setValue(value + "-")
+     if (value.includes("+") || value.includes("/") || value.includes("*"))
+      setValue(first+"-")
+  }
+  function handleMultiply() {
+    setIsFirst(false)
+    // if(!value.includes("*"))
+      setValue(value + "*")
+     if (value.includes("-") || value.includes("/") || value.includes("+"))
+      setValue(first+"*")
+  }
+  function handleDivide() {
+    setIsFirst(false)
+    // if(!value.includes("/"))
+      setValue(value + "/")
+     if (value.includes("-") || value.includes("+") || value.includes("*"))
+      setValue(first+"/")
+  }
+  function handleEquals() {
+    let a = Number(first);
+    let b = Number(sec);
+    let c=0
+    if (isFirst === false) {
+      
+      if (value.includes("+"))
+      {
+        setValue(a + b)
+        c=a+b
+      }
         
-        <label><BsSearch/></label>
-        <input onChange={(e) => handleChange(e)} />
-     
-       
-      </div >
-      {list.map((ele,index) => (
-        <div className='content' style={isVisible ? {} : { display:'none'}}>
-           <span onClick={()=>handleClick(ele)} >{ele}</span>
-       </div>
-      ))}
+      else if (value.includes("-"))
+      {
+        setValue(a - b)
+         c=a-b}
+      else if (value.includes("*"))
+      {
+        setValue(a * b)
+      c=a*b}
+      else if (value.includes("/"))
+      {
+        setValue(a / b)
+      c=a/b}
+    }
+    setFirst(c)
+    setSec("")
+    
+  
+  }
+  return (
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <div className={styles.display} >
+          <textarea value={value} disabled='true' className={styles.screen} />
+
+         
         </div>
-      <div className='outerDiv'>
-        <h3>Selcted Fruit: {selected}</h3>
-    </div>
+        <div className={styles.btn} >
+          <button onClick={handleAdd} className={styles.operators}>+</button>
+          <button onClick={handleSub} className={styles.operators}>-</button>
+          <button onClick={handleMultiply} className={styles.operators}>*</button>
+          <button onClick={handleDivide} className={styles.operators}>/</button>
+
+          {buttons.map((ele) => (
+            <button className={styles.digits} onClick={() =>
+            
+            {
+              setValue(value + ele)
+              if (isFirst == true) 
+                setFirst(first+ele)
+              else
+                setSec(sec+ele)
+            }} >{ele}</button>
+
+          ))}
+          <button className={styles.delete} onClick={() => {
+            setValue("")
+            setIsFirst(true)
+            setFirst(0)
+            setSec(0)
+          }}>Clear</button>
+          <button className={styles.equals} onClick={handleEquals}>=</button>
+        </div>
+
+      </div>
+
+      
     </div>
     
   );

@@ -1,0 +1,63 @@
+.wrapper{
+  width: 20rem;
+  max-height: 30rem;
+
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.display{
+  min-height: 10rem;
+  border: 1px solid blue;
+}
+.btn{
+  min-height: 15rem;
+  border: 1px solid green;
+
+
+}
+.screen{
+  background-color: black;
+  color: white;
+  width: 98%;
+  min-height: 10rem;
+  font-size: xx-large;
+  resize: none;
+}
+.digits{
+  width: 5rem;
+  min-height: 3rem;
+  font-size: large;
+  font-weight: bold;
+  background-color: darkgray;
+}
+.delete{
+  position: relative;
+  top: -15rem;
+
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+  background-color: red
+}
+.operators{
+  width: 4.95rem;
+  min-height: 3rem;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: lightsalmon;
+}
+.equals{
+  position: absolute;
+  top: 23.7rem;
+  left: 50rem;
+  min-height: 12rem;
+  width: 5rem;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: lightgreen;
+}
