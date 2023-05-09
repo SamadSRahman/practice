@@ -1,0 +1,12 @@
+.IncreaseBtn{
+    background-color: lightgreen;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.DecreaseBtn{
+    background-color: tomato;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+}
